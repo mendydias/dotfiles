@@ -61,8 +61,8 @@ local servers = {
   -- gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
-  tsserver = {filetypes = { "typescript", "javascript", "html" }},
-  html = { filetypes = { 'html', 'twig', 'hbs', 'htmldjango'} },
+  -- tsserver = {filetypes = { "typescript", "javascript", "html" }},
+  -- html = { filetypes = { 'html', 'twig', 'hbs', 'htmldjango'} },
 
   lua_ls = {
     Lua = {
@@ -72,11 +72,11 @@ local servers = {
       -- diagnostics = { disable = { 'missing-fields' } },
     },
   },
-  tailwindcss = {
-    includeLanguages = {
-      htmlDjango = "html",
-    },
-  }
+  -- tailwindcss = {
+  --   includeLanguages = {
+  --     htmlDjango = "html",
+  --   },
+  -- }
 }
 
 -- Setup neovim lua configuration

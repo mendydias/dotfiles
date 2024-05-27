@@ -1,3 +1,5 @@
+#! /usr/bin/bash
+
 sudo usermod --add-subuids 10000-65536 $USER
 sudo usermod --add-subgids 10000-65536 $USER
 cat << EOF > /etc/containers/containers.conf

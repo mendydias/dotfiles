@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+if [ $# -ne 1 ]; then
+	echo "Requires distrobox name" >&2;
+	exit 2
+fi
+
+DBOX_HOME_FOLDER="$HOME/Documents/1.projects/$1" 
+
+echo "Making home folder..."
+mkdir -p $DBOX_HOME_FOLDER 2>/dev/null
+
+echo "Copying provision script..."
+rsync "$HOME/Documents/4.archives/2.scripts/.provision" "$DBOX_HOME_FOLDER"
+
+distrobox create -n "$1" -H "$DBOX_HOME_FOLDER"
+
+distrobox enter "$1"

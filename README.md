@@ -35,7 +35,9 @@ This is important, as these files will not work without this:
 - [chezmoi](https://www.chezmoi.io/install/)
 
 After the installation completes, run the following:
+
 `chezmoi init --apply "git@github.com:mendydias/dotfiles.git"`
+
 (This assumes you have set up git with ssh.If not, then follow the instructions
 in this link: [Setting git with ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh))
 

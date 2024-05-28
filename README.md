@@ -51,4 +51,22 @@ Use one of these to set up the container management system:
 Afterwards, install distrobox:
 - [Distrobox](https://github.com/89luca89/distrobox?tab=readme-ov-file#installation)
 
-You're all set!
+## [Optional] Convenience Scripts
+
+Some scripts to make interacting with distrobox, containers and neovim a lot
+easier.
+
+[Convenience script repo](https://github.com/mendydias/scripts/tree/main)
+
+## [Optional] Terminal Emulator
+
+My terminal of choice is Wezterm as I prefer lua as a configuration language.
+
+Installation:
+[Wezterm](https://wezfurlong.org/wezterm/install/linux.html#installing-on-linux-via-flathub)
+
+## Thank you
+
+Thank you to the following for getting this configuration off to a running
+start:
+- [Kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)

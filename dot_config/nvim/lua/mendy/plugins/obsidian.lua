@@ -30,12 +30,8 @@ return {
         workspaces = {
             {
                 name = "my notes",
-                path = "/home/mendydias/Documents/life/30-39 Resources/32 notes",
+                path = "$HOME/Documents/3.resources/1.notes/",
             },
-            {
-                name = "infosec case study",
-                path = "/home/mendydias/Documents/life/20-29 Areas/21 BSE/04 level 5/eei 5270 information security/infosec_casestudy/",
-            }
         },
         completion = {
             -- Set to false to disable completion.

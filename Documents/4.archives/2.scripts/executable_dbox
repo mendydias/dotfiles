@@ -11,8 +11,8 @@ echo "Making home folder..."
 mkdir -p $DBOX_HOME_FOLDER 2>/dev/null
 
 echo "Copying provision script..."
-rsync "$HOME/Documents/4.archives/2.scripts/.provision" "$DBOX_HOME_FOLDER"
+rsync "$HOME/.local/scripts/provision" "$DBOX_HOME_FOLDER"
 
-distrobox create -n "$1" -H "$DBOX_HOME_FOLDER"
+distrobox create -n "$1" -H "$DBOX_HOME_FOLDER" --additional-packages "git neovim ripgrep zoxide eza bat"
 
-distrobox enter "$1"
+distrobox enter -nw "$1" -- bash provision

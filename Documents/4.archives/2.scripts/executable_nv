@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+PROJECT_DIRS="$HOME/Documents/1.projects $HOME/Documents/4.archives/1.projects"
+
+if ! command -v fzf; then
+	echo "Please install fzf to use this utility."
+	exit 2
+fi
+
+find $PROJECT_DIRS -maxdepth 3 -type d | grep -v "^\." | fzf | xargs -I{} nvim {} -c "Oil" -c "cd {}"
+

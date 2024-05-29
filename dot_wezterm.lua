@@ -7,15 +7,16 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = 'catppuccin-macchiato'
+config.color_scheme = 'Afterglow (Gogh)'
 config.colors = {
 	cursor_bg='white',
 	cursor_fg='black',
 	compose_cursor='orange'
 }
 config.window_background_opacity=0.75
+config.window_decorations = "RESIZE"
 config.font = wezterm.font('JetBrainsMono Nerd Font', {weight='Bold'})
-config.font_size = 13
+config.font_size = 15
 config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
   left = 8,

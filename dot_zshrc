@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias l="eza -lbgah --grid --icons"
 
+alias sioyek="sioyek 2>/dev/null & disown"
+
 eval "$(starship init zsh)"
 
 eval "$(zoxide init zsh)"

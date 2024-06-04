@@ -16,7 +16,7 @@ config.colors = {
 config.window_background_opacity=0.85
 config.window_decorations = "RESIZE"
 config.font = wezterm.font('JetBrainsMono Nerd Font', {weight='Bold'})
-config.font_size = 15
+config.font_size = 16
 config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
   left = 8,

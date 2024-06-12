@@ -103,6 +103,8 @@ alias l="eza -lbgah --grid --icons"
 alias sioyek="sioyek 2>/dev/null & disown"
 
 eval "$(starship init zsh)"
+# setup pure
+starship preset gruvbox-rainbow -o ~/.config/starship.toml
 
 eval "$(zoxide init zsh)"
 
@@ -116,4 +118,4 @@ export DBOX_PROVISION_SCRIPT_LOC="$HOME/Documents/4.archives/2.scripts/provision
 # The base folder(s) for your work/projects
 export PROJECT_DIRS="$HOME/Documents/1.projects $HOME/Documents/4.archives/1.projects"
 # The base folder for your ebooks
-	export EBOOKS=$HOME/Documents/3.resources/2.books
+export EBOOKS=$HOME/Documents/3.resources/2.books

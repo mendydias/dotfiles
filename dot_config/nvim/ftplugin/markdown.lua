@@ -10,6 +10,6 @@ vim.o.conceallevel = 2
 -- I hate the wrap of lines in code
 -- This is enforced in the main config.lua file
 -- Still maintained here for posterity
--- vim.o.wrap = true
-vim.o.textwidth = 80
-
+vim.o.wrap = true
+-- vim.o.textwidth = 80
+vim.o.linebreak = true

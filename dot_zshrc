@@ -104,7 +104,7 @@ alias sioyek="sioyek 2>/dev/null & disown"
 
 eval "$(starship init zsh)"
 # setup pure
-starship preset gruvbox-rainbow -o ~/.config/starship.toml
+starship preset tokyo-night -o ~/.config/starship.toml
 
 eval "$(zoxide init zsh)"
 

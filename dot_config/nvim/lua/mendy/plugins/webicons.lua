@@ -1,6 +1,16 @@
 -- Custom icons
 return {
     'nvim-tree/nvim-web-devicons',
+    dependecies = {
+        "rachartier/tiny-devicons-auto-colors.nvim",
+        dependencies = {
+            "nvim-tree/nvim-web-devicons"
+        },
+        event = "VeryLazy",
+        config = function()
+            require('tiny-devicons-auto-colors').setup()
+        end
+    },
     opts = {
         -- your personnal icons can go here (to override)
         -- you can specify color or cterm_color instead of specifying both of them

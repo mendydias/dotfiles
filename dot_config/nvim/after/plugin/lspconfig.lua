@@ -107,4 +107,15 @@ mason_lspconfig.setup_handlers {
 require("lspconfig").jdtls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  settings = {
+    configuration = {
+      runtimes = {
+        {
+          name = "Java SE 21",
+          path = "~/.sdkman/candidates/java/current/bin/java",
+          default = true
+        }
+      }
+    }
+  }
 }

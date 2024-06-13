@@ -56,7 +56,8 @@ require("mendy.gui")
 
 -- This setting is only for the zenbones theme. Comment it when changing the theme.
 -- vim.g.zenbones_transparent_background = true
-vim.cmd("colorscheme zenbones")
+
+vim.cmd("colorscheme nordic")
 
 -- Config for quickscope
 -- vim: ts=2 sts=2 sw=2 et

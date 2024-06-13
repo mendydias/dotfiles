@@ -13,7 +13,7 @@ config.colors = {
 	cursor_fg='black',
 	compose_cursor='orange'
 }
-config.window_background_opacity=0.85
+-- config.window_background_opacity=0.85
 config.window_decorations = "RESIZE"
 config.font = wezterm.font('JetBrainsMono Nerd Font', {weight='Bold'})
 config.font_size = 16

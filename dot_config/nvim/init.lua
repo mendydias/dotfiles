@@ -6,7 +6,6 @@ vim.g.maplocalleader = " "
 
 -- Set proper color support
 vim.opt.termguicolors = true
-
 -- Package manager of choice is lazy.nvim
 -- Yoinked from lazy.nvim's README
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

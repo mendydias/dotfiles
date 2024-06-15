@@ -52,7 +52,17 @@ cmp.setup({
       },
     },
   },
+  sorting = {
+    comparators = {
+      cmp.config.compare.locality,
+      cmp.config.compare.recently_used,
+      cmp.config.compare.score,
+      cmp.config.compare.offset,
+      cmp.config.compare.order,
+      cmp.config.compare.exact,
+    },
+  }
 })
 
 require("luasnip.loaders.from_vscode").lazy_load()
-require("luasnip").filetype_extend("htmldjango", {"html"})
+require("luasnip").filetype_extend("htmldjango", { "html" })

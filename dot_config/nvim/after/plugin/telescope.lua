@@ -1,20 +1,20 @@
 local telescope = require("telescope.builtin")
 -- Basic keymaps for telescope
-vim.keymap.set("n", "<leader>sf", telescope.find_files, {desc = 'Search Files'})
-vim.keymap.set("n", "<leader>sg", telescope.live_grep, {desc = 'Search Live Grep'})
-vim.keymap.set("n", "<leader>sb", telescope.buffers, {desc = 'Search open buffers'})
-vim.keymap.set("n", "<leader>sh", telescope.help_tags, {desc = 'Search Vim Help Tags'})
-vim.keymap.set("n", "<leader>sc", telescope.commands, {desc = 'Search NVim Commands'})
-vim.keymap.set("n", "<leader>sl", telescope.loclist, {desc = 'Search Location List'})
-vim.keymap.set("n", "<leader>sq", telescope.quickfix, {desc = 'Search Quickfix List'})
-vim.keymap.set("n", "<leader>sr", telescope.registers, {desc = 'Search Registers'})
-vim.keymap.set("n", "<leader>sd", telescope.diagnostics, {desc = 'Search Diagnostics'})
-vim.keymap.set("n", "<leader>sp", telescope.lsp_document_symbols, {desc = 'Search Current LSP Symbols'})
-vim.keymap.set("n", "<leader>sgb", telescope.git_branches, {desc = 'Git Search Branches'})
-vim.keymap.set("n", "<leader>sgc", telescope.git_commits, {desc = 'Git Search Commits'})
-vim.keymap.set("n", "<leader>st", telescope.treesitter, {desc = 'Search Treesitter'})
-vim.keymap.set("n", "<leader>sk", telescope.keymaps, {desc = 'Search Keymaps'})
-vim.keymap.set("n", "<leader>su", telescope.lsp_references, {desc = 'Search LSP references'})
+vim.keymap.set("n", "<leader>sf", telescope.find_files, { desc = 'Search Files' })
+vim.keymap.set("n", "<leader>sg", telescope.live_grep, { desc = 'Search Live Grep' })
+vim.keymap.set("n", "<leader>sb", telescope.buffers, { desc = 'Search open buffers' })
+vim.keymap.set("n", "<leader>sh", telescope.help_tags, { desc = 'Search Vim Help Tags' })
+vim.keymap.set("n", "<leader>sc", telescope.commands, { desc = 'Search NVim Commands' })
+vim.keymap.set("n", "<leader>sl", telescope.loclist, { desc = 'Search Location List' })
+vim.keymap.set("n", "<leader>sq", telescope.quickfix, { desc = 'Search Quickfix List' })
+vim.keymap.set("n", "<leader>sr", telescope.registers, { desc = 'Search Registers' })
+vim.keymap.set("n", "<leader>sd", telescope.diagnostics, { desc = 'Search Diagnostics' })
+vim.keymap.set("n", "<leader>sym", telescope.lsp_document_symbols, { desc = 'Search Current LSP Symbols' })
+vim.keymap.set("n", "<leader>sgb", telescope.git_branches, { desc = 'Git Search Branches' })
+vim.keymap.set("n", "<leader>sgc", telescope.git_commits, { desc = 'Git Search Commits' })
+vim.keymap.set("n", "<leader>st", telescope.treesitter, { desc = 'Search Treesitter' })
+vim.keymap.set("n", "<leader>sk", telescope.keymaps, { desc = 'Search Keymaps' })
+vim.keymap.set("n", "<leader>su", telescope.lsp_references, { desc = 'Search LSP references' })
 
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
@@ -129,3 +129,10 @@ vim.keymap.set("n", "<M-4>", function() harpoon:list():select(4) end)
 -- Toggle previous & next buffers stored within Harpoon list
 vim.keymap.set("n", "<C-/>", function() harpoon:list():prev() end)
 vim.keymap.set("n", "<C-.>", function() harpoon:list():next() end)
+
+-- load repo extensions
+require 'telescope'.load_extension 'repo'
+-- repo search
+vim.keymap.set("n", "<leader>sp", require('telescope').extensions.repo.list, { desc = '[S]earch [R]epo' })
+-- Set up remote-sshfs
+require('telescope').load_extension 'remote-sshfs'

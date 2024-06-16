@@ -66,3 +66,7 @@ end)
 
 -- Switch between files: previous and current
 vim.keymap.set("n", "<leader>b", "<C-6>", {})
+-- Cd
+vim.keymap.set("n", "<leader>cds", ":CdProject", { desc = "Search Projects" })
+vim.keymap.set("n", "<leader>cda", ":CdProjectAdd", { desc = "Add current project" })
+vim.keymap.set("n", "<leader>cdd", ":CdProjectDelete", { desc = "Delete curent project" })

@@ -4,11 +4,11 @@
 if vim.g.neovide then
     -- Set the font to something I like
     -- Sets the font size with the h option
-    vim.o.guifont = "JetBrainsMono Nerd Font:h13"
+    vim.o.guifont = "FiraCode Nerd Font:h15"
     -- Sets the linespacing
     vim.opt.linespace = 1
     -- Set the transparency of the window
-    vim.g.neovide_transparency = 0.67
+    vim.g.neovide_transparency = 0.80
     vim.g.neovide_window_blurred = true
     -- Hide the mouse cursor when typing
     vim.g.neovide_hide_mouse_when_typing = true

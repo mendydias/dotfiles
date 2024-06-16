@@ -135,13 +135,9 @@ vim.keymap.set("n", "<M-4>", function() harpoon:list():select(4) end)
 vim.keymap.set("n", "<C-/>", function() harpoon:list():prev() end)
 vim.keymap.set("n", "<C-.>", function() harpoon:list():next() end)
 
--- load repo extensions
-require 'telescope'.load_extension 'repo'
--- repo search
-vim.keymap.set("n", "<leader>sp", require('telescope').extensions.repo.list, { desc = '[S]earch [R]epo' })
 -- Set up remote-sshfs
 require('telescope').load_extension 'remote-sshfs'
 
 require 'telescope'.load_extension 'projects'
 
-vim.keymap.set('n', "<leader>sw", require 'telescope'.extensions.projects.projects {})
+vim.keymap.set('n', "<leader>sw", require 'telescope'.extensions.projects.projects)

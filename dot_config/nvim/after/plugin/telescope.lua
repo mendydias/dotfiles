@@ -141,3 +141,7 @@ require 'telescope'.load_extension 'repo'
 vim.keymap.set("n", "<leader>sp", require('telescope').extensions.repo.list, { desc = '[S]earch [R]epo' })
 -- Set up remote-sshfs
 require('telescope').load_extension 'remote-sshfs'
+
+require 'telescope'.load_extension 'projects'
+
+vim.keymap.set('n', "<leader>sw", require 'telescope'.extensions.projects.projects {})

@@ -4,7 +4,12 @@ vim.keymap.set("n", "<leader>sf", telescope.find_files, { desc = 'Search Files' 
 vim.keymap.set("n", "<leader>sg", telescope.live_grep, { desc = 'Search Live Grep' })
 vim.keymap.set("n", "<leader>sb", telescope.buffers, { desc = 'Search open buffers' })
 vim.keymap.set("n", "<leader>sh", telescope.help_tags, { desc = 'Search Vim Help Tags' })
-vim.keymap.set("n", "<leader>sc", telescope.commands, { desc = 'Search NVim Commands' })
+vim.keymap.set("n", "<leader>sz", telescope.commands, { desc = 'Search NVim Commands' })
+vim.keymap.set("n", "<leader>sc", function()
+    telescope.colorscheme({
+        enable_preview = true
+    })
+end, { desc = 'Search and Live Preview Colorschemes' })
 vim.keymap.set("n", "<leader>sl", telescope.loclist, { desc = 'Search Location List' })
 vim.keymap.set("n", "<leader>sq", telescope.quickfix, { desc = 'Search Quickfix List' })
 vim.keymap.set("n", "<leader>sr", telescope.registers, { desc = 'Search Registers' })

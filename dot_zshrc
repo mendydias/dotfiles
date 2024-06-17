@@ -119,3 +119,14 @@ export DBOX_PROVISION_SCRIPT_LOC="$HOME/Documents/4.archives/2.scripts/provision
 export PROJECT_DIRS="$HOME/Documents/1.projects $HOME/Documents/4.archives/1.projects"
 # The base folder for your ebooks
 export EBOOKS=$HOME/Documents/3.resources/2.books
+
+alias neovide="neovide & disown"
+
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}

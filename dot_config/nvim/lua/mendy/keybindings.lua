@@ -3,7 +3,7 @@ vim.keymap.set("n", "<leader>w", ":w!<cr>", {})
 vim.keymap.set("n", "<leader>q", ":q!<cr>", {})
 
 -- Netrw
-vim.keymap.set("n", "-", ":Ex<cr>")
+-- vim.keymap.set("n", "-", ":Ex<cr>")
 -- Oil
 -- vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 

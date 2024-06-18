@@ -1,3 +1,35 @@
+local H = {}
+
+H.root_cache = {}
+
+function find_root(path)
+    names = { '.git', 'Makefile' }
+    fallback = function() return nil end
+
+    if path == '' then return end
+    --
+    -- Try using cache
+    local res = H.root_cache[path]
+    if res ~= nil then return res end
+
+    -- Find root
+    local root_file = vim.fs.find(names, { path = path, upward = true })[1]
+    if root_file ~= nil then
+        res = vim.fs.dirname(root_file)
+        print("res is now: ", res)
+    end
+
+    -- Use absolute path to an existing directory
+    if type(res) ~= 'string' then return end
+    res = vim.fn.fnamemodify(res, ':p')
+    if vim.fn.isdirectory(res) == 0 then return end
+
+    -- Cache result per directory path
+    H.root_cache[path] = res
+
+    return res
+end
+
 return {
     "mikavilpas/yazi.nvim",
     dependencies = {
@@ -24,5 +56,11 @@ return {
     },
     opts = {
         open_for_directories = true,
+        hooks = {
+            yazi_closed_successfully = function(chosen_files, config)
+                local root = find_root(chosen_files)
+                vim.fn.chdir(root);
+            end
+        }
     },
 }

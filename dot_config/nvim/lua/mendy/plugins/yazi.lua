@@ -3,6 +3,9 @@ local H = {}
 H.root_cache = {}
 
 function find_root(path)
+    -- disable conflicting vim option
+    vim.o.autochdir = false
+
     names = { '.git', 'Makefile' }
     fallback = function() return nil end
 

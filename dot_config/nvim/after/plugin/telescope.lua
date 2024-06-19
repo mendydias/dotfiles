@@ -82,23 +82,6 @@ vim.keymap.set('n', '<leader>s*', require('telescope.builtin').grep_string, { de
 vim.keymap.set('n', '<leader>sgr', ':LiveGrepGitRoot<cr>', { desc = '[S]earch from [G]rep [R]oot' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
 
--- File browser setup
-require("telescope").load_extension "file_browser"
--- 1. Open folder root
-vim.api.nvim_set_keymap(
-    "n",
-    "<M-r>",
-    ":Telescope file_browser<CR>",
-    { noremap = true, desc = 'Open folder browser at project root' }
-)
--- 2. Open folder at current file
-vim.api.nvim_set_keymap(
-    "n",
-    "<M-b>",
-    ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
-    { noremap = true, desc = 'Open folder browser at the current file' }
-)
-
 -- Harpoon integration
 local harpoon = require("harpoon")
 harpoon:setup({

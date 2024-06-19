@@ -30,7 +30,7 @@ return {
         workspaces = {
             {
                 name = "my notes",
-                path = "$HOME",
+                path = "$HOME/Documents/3.resources/1.notes/",
             },
         },
         completion = {

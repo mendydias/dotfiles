@@ -56,13 +56,23 @@ return {
             end,
             desc = "Open the file manager in nvim's working directory",
         },
+        {
+            -- Open at current buffer
+            "<leader>gu",
+            function()
+                require "yazi".yazi(nil, vim.api.nvim_buf_get_name(0))
+            end,
+            desc = "Open the file manager in nvim's current buffer location",
+        },
     },
     opts = {
         open_for_directories = true,
         hooks = {
             yazi_closed_successfully = function(chosen_files, config)
                 local root = find_root(chosen_files)
-                vim.fn.chdir(root);
+                if root ~= nil then
+                    vim.fn.chdir(root);
+                end
             end
         }
     },

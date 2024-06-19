@@ -120,7 +120,8 @@ export PROJECT_DIRS="$HOME/Documents/1.projects $HOME/Documents/4.archives/1.pro
 # The base folder for your ebooks
 export EBOOKS=$HOME/Documents/3.resources/2.books
 
-alias neovide="neovide . & disown"
+alias neo="neovide . & disown"
+alias neovide="neovide & disown"
 
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"

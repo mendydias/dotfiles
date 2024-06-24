@@ -2,7 +2,7 @@ local H = {}
 
 H.root_cache = {}
 
-function find_root(path)
+local function find_root(path)
     -- disable conflicting vim option
     vim.o.autochdir = false
 
@@ -74,6 +74,6 @@ return {
                     vim.fn.chdir(root);
                 end
             end
-        }
+       }
     },
 }

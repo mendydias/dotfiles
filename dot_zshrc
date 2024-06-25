@@ -135,3 +135,5 @@ function yy() {
 if [ -f $HOME/.sdkman/bin/sdkman-init.sh ]; then
 	source $HOME/.sdkman/bin/sdkman-init.sh
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

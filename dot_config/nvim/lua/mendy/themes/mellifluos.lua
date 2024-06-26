@@ -24,7 +24,7 @@ return {
                 },
             },
             transparent_background = {
-                enabled = true,
+                enabled = false,
                 floating_windows = true,
                 telescope = true,
                 file_tree = true,

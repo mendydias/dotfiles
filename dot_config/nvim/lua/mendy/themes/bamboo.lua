@@ -5,7 +5,7 @@ return {
     config = function()
         require('bamboo').setup {
             -- optional configuration here
-            transparent = true
+            transparent = false
         }
         require('bamboo').load()
     end,

@@ -1,5 +1,5 @@
 -- Save and quit
-vim.keymap.set("n", "<leader>w", ":w!<cr>", {})
+vim.keymap.set("n", "<leader>e", ":w!<cr>", {})
 vim.keymap.set("n", "<leader>q", ":q!<cr>", {})
 
 -- Netrw

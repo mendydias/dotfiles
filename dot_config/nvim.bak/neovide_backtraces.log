@@ -1,0 +1,31 @@
+2024-03-09 08:26:45 - Neovide panicked with the message 'called `Result::unwrap()` on an `Err` value: Error { kind: Io(Os { code: 24, kind: Uncategorized, message: "Too many open files" }), paths: [] }'. (File: src/settings/config.rs; Line: 133, Column: 14)
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+
+2024-04-28 19:07:20 - Neovide panicked with the message 'Failed to create Window: Error { raw_code: Some(12289), raw_os_message: None, kind: InitializationFailed }'. (File: src/renderer/opengl.rs; Line: 92, Column: 10)
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: __libc_start_main
+  13: <unknown>
+

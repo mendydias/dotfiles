@@ -1,1 +1,0 @@
-return { 'MunifTanjim/prettier.nvim', }

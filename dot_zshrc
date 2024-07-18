@@ -104,7 +104,7 @@ alias sioyek="sioyek 2>/dev/null & disown"
 
 eval "$(starship init zsh)"
 # setup pure
-starship preset jetpack -o ~/.config/starship.toml
+# starship preset jetpack -o ~/.config/starship.toml
 
 eval "$(zoxide init zsh)"
 

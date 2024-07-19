@@ -30,9 +30,4 @@ return {
     telescope.load_extension("chezmoi")
     vim.keymap.set("n", "<leader>fC", telescope.extensions.chezmoi.find_files, {})
   end,
-  keys = {
-    "<leader>ce",
-    ":ChezmoiEdit",
-    desc = "Edit Chezmoi config files",
-  },
 }

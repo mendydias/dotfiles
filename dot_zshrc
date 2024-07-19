@@ -126,4 +126,4 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Start ssh agent
-eval $(keychain --eval --quiet)
+eval $(keychain --eval --quiet ~/.ssh/id_ed25519)

@@ -108,18 +108,6 @@ eval "$(starship init zsh)"
 
 eval "$(zoxide init zsh)"
 
-# These environment variables are required to make the convenience scripts work.
-# Change their values  here
-# 
-# The base folder for containers
-export DBOX_HOME_FOLDER="$HOME/Documents/1.projects" 
-# The provision script location (where you cloned the convenience script repo)
-export DBOX_PROVISION_SCRIPT_LOC="$HOME/Documents/4.archives/2.scripts/provision" 
-# The base folder(s) for your work/projects
-export PROJECT_DIRS="$HOME/Documents/1.projects $HOME/Documents/4.archives/1.projects"
-# The base folder for your ebooks
-export EBOOKS=$HOME/Documents/3.resources/2.books
-
 alias nv="nvim "
 
 function yy() {
@@ -138,4 +126,4 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Start ssh agent
-eval "$(ssh-agent)"
+eval $(keychain --eval --quiet)

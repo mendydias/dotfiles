@@ -10,7 +10,7 @@ if vim.g.neovide then
   -- Sets the linespacing
   vim.opt.linespace = 1
   -- Set the transparency of the window
-  vim.g.neovide_transparency = 0.80
+  vim.g.neovide_transparency = 0.70
   vim.g.neovide_window_blurred = true
   -- Hide the mouse cursor when typing
   vim.g.neovide_hide_mouse_when_typing = true

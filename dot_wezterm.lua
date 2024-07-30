@@ -20,6 +20,7 @@ config.window_padding = {
 	bottom = 8,
 }
 config.enable_scroll_bar = false
+config.use_fancy_tab_bar = false
 -- config.text_background_opacity = 0.67
 
 -- and finally, return the configuration to wezterm

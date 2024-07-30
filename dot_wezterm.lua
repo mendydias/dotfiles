@@ -14,7 +14,10 @@ config.font = wezterm.font("FiraCode Nerd Font", { weight = "Medium" })
 config.font_size = 9
 config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
-	bottom = 24,
+	left = 8,
+	right = 8,
+	top = 8,
+	bottom = 8,
 }
 config.enable_scroll_bar = false
 -- config.text_background_opacity = 0.67

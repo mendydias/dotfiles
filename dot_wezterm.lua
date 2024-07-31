@@ -7,11 +7,11 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = "Tokyo Night Storm"
+config.color_scheme = "Gruvbox Dark (Gogh)"
 config.window_background_opacity = 0.67
 config.window_decorations = "NONE"
 config.font = wezterm.font("FiraCode Nerd Font", { weight = "Medium" })
-config.font_size = 9
+config.font_size = 11
 config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
 	left = 8,

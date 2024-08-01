@@ -2,4 +2,4 @@
 require("config.lazy")
 require("config.gui")
 
-vim.cmd("colorscheme gruvbox")
+vim.cmd("colorscheme onedark")

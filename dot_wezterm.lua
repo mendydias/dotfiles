@@ -7,7 +7,7 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = "Gruvbox Dark (Gogh)"
+config.color_scheme = "OneHalfLight"
 config.window_background_opacity = 0.67
 config.window_decorations = "NONE"
 config.font = wezterm.font("FiraCode Nerd Font", { weight = "Medium" })

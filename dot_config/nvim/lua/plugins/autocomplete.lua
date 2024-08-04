@@ -41,10 +41,16 @@ return {
           fallback()
         end,
       }),
+      snippet = {
+        expand = function(item)
+          return LazyVim.cmp.expand(item.body)
+        end,
+      },
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
         { name = "path" },
         { name = "spell" },
+        { name = "snippets" },
       }, {
         { name = "buffer" },
       }),

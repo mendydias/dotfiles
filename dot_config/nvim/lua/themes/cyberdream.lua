@@ -10,6 +10,5 @@ return {
       hide_fillchars = true,
       borderless_telescope = true,
     })
-    vim.cmd("colorscheme cyberdream") -- set the colorscheme
   end,
 }

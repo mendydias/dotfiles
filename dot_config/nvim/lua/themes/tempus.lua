@@ -1,3 +1,3 @@
 return {
-  "protesilaos/tempus-themes-vim.git",,
+  "protesilaos/tempus-themes-vim.git",
 }

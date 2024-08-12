@@ -103,7 +103,7 @@ return {
       -- The default folder to place images in via `:ObsidianPasteImg`.
       -- If this is a relative path it will be interpreted as relative to the vault root.
       -- You can always override this per image by passing a full path to the command instead of just a filename.
-      img_folder = "res", -- This is the default
+      img_folder = "4.resources", -- This is the default
     },
     daily_notes = {
       -- Optional, if you keep daily notes in a separate directory.

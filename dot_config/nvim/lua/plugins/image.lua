@@ -4,10 +4,9 @@ return {
   opts = {
     rocks = { "magick" },
   },
-}, {
-  "3rd/image.nvim",
-  dependencies = { "luarocks.nvim" },
-  config = function()
-    -- ...
-  end,
+  dependencies = {
+    "3rd/image.nvim",
+    dependencies = { "luarocks.nvim" },
+    config = true,
+  },
 }

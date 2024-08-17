@@ -3,7 +3,7 @@ return {
   name = "rose-pine",
   opts = {
     --- @usage 'auto'|'main'|'moon'|'dawn'
-    variant = "dawn",
+    variant = "main",
     --- @usage 'main'|'moon'|'dawn'
     dark_variant = "main",
     bold_vert_split = false,

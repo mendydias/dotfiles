@@ -15,27 +15,11 @@ return {
     -- Required.
     "nvim-lua/plenary.nvim",
   },
-  keys = {
-    { "<leader>obo", "<cmd>ObsidianOpen<cr>", desc = "Open Obsidian" },
-    { "<leader>obn", "<cmd>ObsidianNew<cr>", desc = "Create a new Obsidian Document" },
-    { "<leader>obs", "<cmd>ObsidianSearch<cr>", desc = "Search Obsidian" },
-    { "<leader>obt", "<cmd>ObsidianTag<cr>", desc = "Search Obsidian Tags" },
-    { "<leader>obf", "<cmd>ObsidianQuickSwitch<cr>", desc = "Obsidian Find Files" },
-    { "<leader>obp", "<cmd>ObsidianPasteImg<cr>", desc = "Obsidian Paste Image" },
-    { "<leader>obr", "<cmd>ObsidianRename<cr>", desc = "Obsidian Rename current note" },
-    { "<leader>obn", "<cmd>ObsidianLinkNew<cr>", desc = "Create a new link from the highlighted text" },
-    {
-      "<leader>obl",
-      "<cmd>ObsidianBacklinks<cr>",
-      desc = "Obsidian list backlinks to the current note",
-    },
-    { "<M-t>", "<cmd>ObsidianTemplate _layout_2<cr>/o1df<cr>cc", desc = "Insert Obsidian Template into file" },
-  },
   opts = {
     workspaces = {
       {
         name = "my notes",
-        path = "$HOME/Documents/3.resources/1.notes/",
+        path = "$HOME/Documents/3.resources/1.notes.bak/",
       },
     },
     completion = {

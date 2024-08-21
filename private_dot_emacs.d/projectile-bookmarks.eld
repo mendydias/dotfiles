@@ -1,1 +1,0 @@
-("~/Documents/1.projects/pract/" "~/Documents/1.projects/strsplit/" "~/Documents/1.projects/simple_java/" "~/Documents/1.projects/loompa/" "~/Documents/1.projects/leetcode/" "~/Documents/1.projects/gurutest/" "~/Documents/1.projects/fvs/" "~/Documents/1.projects/exa1/" "~/Documents/1.projects/edumate/" "~/Documents/1.projects/StickerSmash/")

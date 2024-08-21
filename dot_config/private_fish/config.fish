@@ -10,7 +10,8 @@ fish_add_path $HOME/.config/emacs/bin/
 
 # set editor
 
-set -x EDITOR emacs
+set -x EDITOR "emacsclient -t"
+set -x VISUAL "emacsclient -c -a=\"\""
 
 # set up keychain
 

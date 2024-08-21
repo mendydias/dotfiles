@@ -6,9 +6,11 @@ starship init fish | source
 
 set -x PATH $PATH $HOME/.local/bin
 
+fish_add_path $HOME/.config/emacs/bin/
+
 # set editor
 
-set -x EDITOR nvim
+set -x EDITOR emacs
 
 # set up keychain
 

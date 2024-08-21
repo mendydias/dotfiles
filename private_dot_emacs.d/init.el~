@@ -143,7 +143,6 @@
    :host github
    :repo "thongpv87/rose-pine-emacs"
    :branch "master"))
-(load-theme 'rose-pine-{color-moon-dawn} t)
 
 ;; Set the theme manually
 ;(load-theme 'catppuccin :no-confirm)

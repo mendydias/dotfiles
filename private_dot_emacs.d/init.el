@@ -64,7 +64,7 @@
 	 ("C-x C-f" . counsel-find-file)
 	 :map minibuffer-local-map
 	 ("C-r" . 'counsel-minibuffer-history)
-)) ; replace common emacs commands with ivy completion compatible commands
+	 )) ; replace common emacs commands with ivy completion compatible commands
 
 (use-package swiper) ; replace search with fuzzy finder
 
@@ -145,7 +145,7 @@
    :branch "master"))
 
 ;; Set the theme manually
-;(load-theme 'catppuccin :no-confirm)
+					;(load-theme 'catppuccin :no-confirm)
 ;; Experimental transparency
 (set-frame-parameter nil 'alpha-background 90)
 (add-to-list 'default-frame-alist '(alpha-background . 90))
@@ -169,11 +169,27 @@
 (use-package helpful
   :custom
   (counsel-describe-function-function #'helpful-callable)
-   (counsel-describe-variable-function #'helpful-variable)
-   :bind
-   ([remap describe-function] . counsel-describe-function)
-   ([remap describe-command] . helpful-command)
-   ([remap describe-variable] . counsel-describe-variable)
-   ([remap describe-key] . helpful-key))
+  (counsel-describe-variable-function #'helpful-variable)
+  :bind
+  ([remap describe-function] . counsel-describe-function)
+  ([remap describe-command] . helpful-command)
+  ([remap describe-variable] . counsel-describe-variable)
+  ([remap describe-key] . helpful-key))
+
+;; Project setup
+(use-package projectile
+  :diminish (projectile-mode)
+  :config  (projectile-mode)
+  :custom ((projectile-completion-system 'ivy))
+  :init
+  (when (file-directory-p "~/Documents/1.projects")
+    (setq projectile-project-search-path '("~/Documents/1.projects"))
+    (setq projectile-switch-project-action #'projectile-dired))
+)
+;; Recommended keymap prefix on Windows/Linux
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+;; Counsel to help search for projectiles better
+(use-package counsel-projectile
+  :config (counsel-projectile-mode))
 
 ;; Keybindings

@@ -135,8 +135,17 @@
   (doom-themes-treemacs-config)
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
-;; Set the theme
-(load-theme 'catppuccin :no-confirm)
+
+(use-package autothemer :ensure t)
+
+(straight-use-package
+ '(rose-pine-emacs
+   :host github
+   :repo "thongpv87/rose-pine-emacs"
+   :branch "master"))
+
+;; Set the theme manually
+;(load-theme 'catppuccin :no-confirm)
 ;; Experimental transparency
 (set-frame-parameter nil 'alpha-background 90)
 (add-to-list 'default-frame-alist '(alpha-background . 90))

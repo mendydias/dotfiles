@@ -32,16 +32,17 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-dracula)
-(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 10))
+(setq doom-theme 'doom-molokai)
+(setq doom-font (font-spec :family "Iosevka Nerd Font" :size 12 :width 'normal :spacing 'P))
+(setq doom-symbol-font (font-spec :family "JetBrainsMono Nerd Font" :size 12))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type 'relative)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
+(setq org-directory "~/1.projects/org-mode-pract/")
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
@@ -84,3 +85,12 @@
 (setq key-chord-two-keys-delay 0.5)
 (key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
 (key-chord-mode 1)
+
+;; Set up projectile search path
+(setq projectile-project-search-path '("~/Documents/1.projects/" "~/Documents/4.archives/1.projects/" "~/Documents/2.areas/3.work/"))
+
+;; Set up the editor defaults so that there is consistency across all code
+(use-package! editorconfig
+  :ensure t
+  :diminish (editorconfig-mode)
+  :config (editorconfig-mode 1))

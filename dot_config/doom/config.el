@@ -33,7 +33,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-dracula)
-(setq doom-font (font-spec :family "FantasqueSansM Nerd Font Propo" :size 14 :width 'normal :spacing 'P))
+(setq doom-font (font-spec :family "MonaspiceRn Nerd Font" :size 14 :width 'normal :spacing 'P))
 (setq doom-symbol-font (font-spec :family "Symbols Nerd Font" :size 14))
 
 ;; Set up background transparency

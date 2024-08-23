@@ -33,7 +33,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-dracula)
-(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 12 :width 'normal :spacing 'P))
+(setq doom-font (font-spec :family "FantasqueSansM Nerd Font Propo" :size 12 :width 'normal :spacing 'P))
 (setq doom-symbol-font (font-spec :family "Symbols Nerd Font" :size 12))
 
 ;; Set up background transparency
@@ -96,3 +96,12 @@
   :ensure t
   :diminish (editorconfig-mode)
   :config (editorconfig-mode 1))
+
+(use-package! org-download)
+(use-package! kanagawa-theme)
+(use-package! timu-macos-theme)
+(use-package! timu-caribbean-theme)
+(use-package! timu-rouge-theme)
+(use-package! modus-themes)
+(use-package! tao-theme)
+(use-package! nov)

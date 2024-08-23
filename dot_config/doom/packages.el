@@ -50,3 +50,4 @@
 ;; (unpin! t)
 (package! key-chord)
 (package! editorconfig)
+(package! org-download)

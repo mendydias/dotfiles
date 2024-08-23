@@ -89,7 +89,7 @@
 (key-chord-mode 1)
 
 ;; Set up projectile search path
-(setq projectile-project-search-path '("~/Documents/1.projects"))
+(setq projectile-project-search-path '("~/Documents/1.projects" "~/Documents/2.areas/3.work/" "~/Documents/4.archives/1.projects/" "~/Documents/4.archives/2.scripts/"))
 
 ;; Set up the editor defaults so that there is consistency across all code
 (use-package! editorconfig

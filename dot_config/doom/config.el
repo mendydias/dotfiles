@@ -33,8 +33,8 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-dracula)
-(setq doom-font (font-spec :family "FantasqueSansM Nerd Font Propo" :size 12 :width 'normal :spacing 'P))
-(setq doom-symbol-font (font-spec :family "Symbols Nerd Font" :size 12))
+(setq doom-font (font-spec :family "FantasqueSansM Nerd Font Propo" :size 14 :width 'normal :spacing 'P))
+(setq doom-symbol-font (font-spec :family "Symbols Nerd Font" :size 14))
 
 ;; Set up background transparency
 (set-frame-parameter nil 'alpha-background 90)
@@ -90,12 +90,6 @@
 
 ;; Set up projectile search path
 (setq projectile-project-search-path '("~/Documents/1.projects" "~/Documents/2.areas/3.work/" "~/Documents/4.archives/1.projects/" "~/Documents/4.archives/2.scripts/"))
-
-;; Set up the editor defaults so that there is consistency across all code
-(use-package! editorconfig
-  :ensure t
-  :diminish (editorconfig-mode)
-  :config (editorconfig-mode 1))
 
 (use-package! org-download)
 (use-package! kanagawa-theme)

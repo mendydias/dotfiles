@@ -49,7 +49,6 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
 (package! key-chord)
-(package! editorconfig)
 (package! org-download)
 (package! kanagawa-theme)
 (package! timu-macos-theme)
@@ -58,3 +57,4 @@
 (package! modus-themes)
 (package! tao-theme)
 (package! nov)
+(package! olivetti)

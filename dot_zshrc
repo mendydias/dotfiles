@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-export EDITOR emacs
+export EDITOR=nvim
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,7 +72,7 @@ export EDITOR emacs
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zoxide)
+plugins=(git zoxide zsh-autosuggestions zsh-syntax-highlighting zsh-256color)
 
 source $ZSH/oh-my-zsh.sh
 

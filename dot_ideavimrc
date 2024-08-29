@@ -42,9 +42,9 @@ nmap <leader>e <Action>(ActivateProjectToolWindow)
 
 " Reformat the current line only
 map <leader>l V<Action>(ReformatCode)
-
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>o <Action>(FileStructurePopup)
+map <S-k> <Action>(ShowHoverInfo)
 
 imap jj <Esc>
 imap jk <Esc>

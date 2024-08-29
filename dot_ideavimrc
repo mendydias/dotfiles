@@ -1,0 +1,71 @@
+let mapleader=" "
+
+" Plugins
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set textobj-entire
+set ReplaceWithRegister
+set exchange
+set matchit
+set textobj-indent
+set vim-paragraph-motion
+set highlightedyank
+set which-key
+set ideajoin
+set quickscope
+
+" Common settings
+set clipboard=ideaput
+set showmode
+set so=5
+set incsearch
+set nu
+
+" keybindings
+nmap s <Action>(flash.search)
+nmap H ^
+nmap L $
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(RenameElement)
+map <leader>c <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map <S-Space> <Action>(GotoNextError)
+nmap <leader>e <Action>(ActivateProjectToolWindow)
+
+" Reformat the current line only
+map <leader>l V<Action>(ReformatCode)
+
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>o <Action>(FileStructurePopup)
+
+imap jj <Esc>
+imap jk <Esc>
+set timeoutlen=1000
+
+" Just makes me nervous
+map H h
+
+" Toggle case and start typing. E.g. `<leader>iget`: `property` -> `getProperty`
+map <leader>i ~hi
+" Remove selection and toggle case. E.g. `v2l<leader>u`: `getProperty` -> `property`
+vmap <leader>u d~h
+
+" I think it's a better solution
+map U <C-R>
+
+" Harpoon bindings
+nmap <leader>ha <Action>(AddToHarpoon)
+nmap <leader>1 <Action>(GotoHarpoon1)
+nmap <leader>2 <Action>(GotoHarpoon2)
+nmap <leader>3 <Action>(GotoHarpoon3)
+nmap <leader>4 <Action>(GotoHarpoon4)
+nmap <leader>5 <Action>(GotoHarpoon5)
+nmap <leader>hs <Action>(ShowHarpoon)

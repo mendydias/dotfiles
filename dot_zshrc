@@ -88,8 +88,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias l="eza -lbgah --grid --icons"
 
-alias sioyek="sioyek 2>/dev/null & disown"
-
 eval "$(starship init zsh)"
 
 eval "$(zoxide init zsh)"
@@ -109,7 +107,8 @@ if [ -f $HOME/.sdkman/bin/sdkman-init.sh ]; then
 	source $HOME/.sdkman/bin/sdkman-init.sh
 fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # Start ssh agent
 eval $(keychain --eval --quiet ~/.ssh/id_ed25519)

@@ -86,7 +86,7 @@ return {
       -- 1. Whether to add the note ID during completion.
       -- E.g. "[[Foo" completes to "[[foo|Foo]]" assuming "foo" is the ID of the note.
       -- Mutually exclusive with 'prepend_note_path' and 'use_path_only'.
-      -- prepend_note_id = true,
+      prepend_note_id = true,
       -- 2. Whether to add the note path during completion.
       -- E.g. "[[Foo" completes to "[[notes/foo|Foo]]" assuming "notes/foo.md" is the path of the note.
       -- Mutually exclusive with 'prepend_note_id' and 'use_path_only'.
@@ -94,7 +94,7 @@ return {
       -- 3. Whether to only use paths during completion.
       -- E.g. "[[Foo" completes to "[[notes/foo]]" assuming "notes/foo.md" is the path of the note.
       -- Mutually exclusive with 'prepend_note_id' and 'prepend_note_path'.
-      use_path_only = false, -- Disable the ugly note id
+      -- use_path_only = true, -- Disable the ugly note id
     },
     mappings = {
       -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
@@ -104,6 +104,13 @@ return {
         end,
         opts = { noremap = false, expr = true, buffer = true },
       },
+      ["<cr>"] = {
+        action = function()
+          return require("obsidian").util.gf_passthrough()
+        end,
+        opts = { noremap = false, expr = true, buffer = true },
+      },
+      -- Toggle check-boxes.
       -- Toggle check-boxes.
       ["<leader>ch"] = {
         action = function()
@@ -171,7 +178,7 @@ return {
     -- 1. "current" (the default) - to always open in the current window
     -- 2. "vsplit" - to open in a vertical split if there's not already a vertical split
     -- 3. "hsplit" - to open in a horizontal split if there's not already a horizontal split
-    open_notes_in = "vsplit",
+    open_notes_in = "current",
     -- Specify how to handle attachments.
     attachments = {
       -- The default folder to place images in via `:ObsidianPasteImg`.

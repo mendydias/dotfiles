@@ -1,3 +1,4 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-vim.cmd("colorscheme evergarden")
+require("config.gui")
+vim.cmd("colorscheme tokyonight")

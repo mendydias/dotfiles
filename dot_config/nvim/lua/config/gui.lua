@@ -6,19 +6,19 @@
 if vim.g.neovide then
   -- Set the font to something I like
   -- Sets the font size with the h option
-  vim.o.guifont = "FiraCode Nerd Font:h10"
+  vim.o.guifont = "JetBrainsMono Nerd Font:h8"
   -- Sets the linespacing
-  vim.opt.linespace = 1
+  vim.opt.linespace = 1.2
   -- Set the transparency of the window
-  vim.g.neovide_transparency = 0.70
-  vim.g.neovide_window_blurred = true
+  -- vim.g.neovide_transparency = 0.98
+  -- vim.g.neovide_window_blurred = true
   -- Hide the mouse cursor when typing
-  vim.g.neovide_hide_mouse_when_typing = true
+  -- vim.g.neovide_hide_mouse_when_typing = true
   -- Set underline to scale properly
   vim.g.neovide_underline_stroke_scale = 1.0
   -- Set the window to start in fullscreen mode
-  vim.g.neovide_padding_top = 8
-  vim.g.neovide_padding_bottom = 8
-  vim.g.neovide_padding_right = 8
-  vim.g.neovide_padding_left = 8
+  -- vim.g.neovide_padding_top = 8
+  -- vim.g.neovide_padding_bottom = 8
+  -- vim.g.neovide_padding_right = 8
+  -- vim.g.neovide_padding_left = 8
 end

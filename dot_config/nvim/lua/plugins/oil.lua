@@ -1,6 +1,8 @@
 return {
   "stevearc/oil.nvim",
-  opts = {},
+  opts = {
+    default_file_explorer = true,
+  },
   keys = {
     { "-", ":Oil<CR>", desc = "Opens the Oil file browser" },
   },

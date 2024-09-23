@@ -28,7 +28,7 @@ return {
       "<cmd>ObsidianBacklinks<cr>",
       desc = "Obsidian list backlinks to the current note",
     },
-    { "<M-t>", "<cmd>ObsidianTemplate _layout_2<cr>/o1df<cr>cc", desc = "Insert Obsidian Template into file" },
+    { "<M-t>", "<cmd>ObsidianTemplate main_template<cr>", desc = "Insert Obsidian Template into file" },
   },
   opts = {
     workspaces = {
@@ -41,9 +41,9 @@ return {
     -- dir = "~/vaults/work",
 
     -- Optional, if you keep notes in a specific subdirectory of your vault.
-    notes_subdir = "3.notes/",
+    notes_subdir = "2.notes/",
     -- Either 'wiki' or 'markdown'.
-    preferred_link_style = "markdown",
+    preferred_link_style = "wiki",
     -- Optional, boolean or a function that takes a filename and returns a boolean.
     -- `true` indicates that you don't want obsidian.nvim to manage frontmatter.
     -- disable_frontmatter = false,
@@ -86,7 +86,7 @@ return {
       -- 1. Whether to add the note ID during completion.
       -- E.g. "[[Foo" completes to "[[foo|Foo]]" assuming "foo" is the ID of the note.
       -- Mutually exclusive with 'prepend_note_path' and 'use_path_only'.
-      prepend_note_id = true,
+      prepend_note_id = false,
       -- 2. Whether to add the note path during completion.
       -- E.g. "[[Foo" completes to "[[notes/foo|Foo]]" assuming "notes/foo.md" is the path of the note.
       -- Mutually exclusive with 'prepend_note_id' and 'use_path_only'.
@@ -120,7 +120,7 @@ return {
       },
     },
     templates = {
-      subdir = "5.templates",
+      subdir = "4.templates",
       date_format = "%Y-%m-%d",
       time_format = "%H:%M",
       -- A map for custom variables, the key should be the variable and the value a function
@@ -184,11 +184,11 @@ return {
       -- The default folder to place images in via `:ObsidianPasteImg`.
       -- If this is a relative path it will be interpreted as relative to the vault root.
       -- You can always override this per image by passing a full path to the command instead of just a filename.
-      img_folder = "4.resources", -- This is the default
+      img_folder = "3.resources", -- This is the default
     },
     daily_notes = {
       -- Optional, if you keep daily notes in a separate directory.
-      folder = "2.dailies/",
+      folder = "1.dailies/",
       -- Optional, if you want to change the date format for the ID of daily notes.
       date_format = "%Y-%m-%d",
       -- Optional, if you want to change the date format of the default alias of daily notes.

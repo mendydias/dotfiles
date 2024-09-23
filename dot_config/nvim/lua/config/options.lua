@@ -5,3 +5,4 @@ vim.o.number = false
 vim.o.relativenumber = false
 
 vim.g.maplocalleader = "\t"
+vim.o.textwidth = 80

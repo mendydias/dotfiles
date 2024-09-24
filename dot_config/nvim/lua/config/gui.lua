@@ -8,7 +8,7 @@ if vim.g.neovide then
   -- Sets the font size with the h option
   vim.o.guifont = "JetBrainsMono Nerd Font:h8"
   -- Sets the linespacing
-  vim.opt.linespace = 1.2
+  vim.opt.linespace = 1
   -- Set the transparency of the window
   -- vim.g.neovide_transparency = 0.98
   -- vim.g.neovide_window_blurred = true

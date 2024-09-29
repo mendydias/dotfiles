@@ -22,6 +22,36 @@ return {
   end,
   keys = {
     {
+      "<C-n>",
+      function()
+        require("cmp").mapping.select_next_item()
+      end,
+    },
+    {
+      "<C-p>",
+      function()
+        require("cmp").mapping.select_prev_item()
+      end,
+    },
+    {
+      "<C-b",
+      function()
+        require("cmp").mapping.scroll_docs(-4)
+      end,
+    },
+    {
+      "<C-f",
+      function()
+        require("cmp").mapping.scroll_docs(4)
+      end,
+    },
+    {
+      "C-Space",
+      function()
+        require("cmp").mapping.complete({})
+      end,
+    },
+    {
       "<Tab>",
       function()
         return vim.snippet.active({ direction = 1 }) and "<cmd>lua vim.snippet.jump(1)<cr>" or "<Tab>"

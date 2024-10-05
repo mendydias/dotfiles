@@ -22,6 +22,12 @@ return {
   end,
   keys = {
     {
+      "<CR>",
+      function()
+        require("cmp").mapping.confirm({ select = true })
+      end,
+    },
+    {
       "<C-n>",
       function()
         require("cmp").mapping.select_next_item()

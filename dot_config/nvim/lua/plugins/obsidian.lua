@@ -21,7 +21,6 @@ return {
     { "<leader>os", "<cmd>ObsidianSearch<cr>", desc = "Search Obsidian" },
     { "<leader>ot", "<cmd>ObsidianTag<cr>", desc = "Search Obsidian Tags" },
     { "<leader>of", "<cmd>ObsidianQuickSwitch<cr>", desc = "Obsidian Find Files" },
-    { "<leader>op", "<cmd>ObsidianPasteImg<cr>", desc = "Obsidian Paste Image" },
     { "<leader>or", "<cmd>ObsidianRename<cr>", desc = "Obsidian Rename current note" },
     {
       "<leader>obl",
@@ -71,17 +70,17 @@ return {
     -- Optional, set the log level for obsidian.nvim. This is an integer corresponding to one of the log
     -- levels defined by "vim.log.levels.*".
     log_level = vim.log.levels.INFO,
+
+    -- Where to put new notes created from completion. Valid options are
+    --  * "current_dir" - put new notes in same directory as the current buffer.
+    --  * "notes_subdir" - put new notes in the default notes subdirectory.
+    new_notes_location = "notes_subdir",
     completion = {
       -- Set to false to disable completion.
       nvim_cmp = true,
 
       -- Trigger completion at 2 chars.
       min_chars = 2,
-
-      -- Where to put new notes created from completion. Valid options are
-      --  * "current_dir" - put new notes in same directory as the current buffer.
-      --  * "notes_subdir" - put new notes in the default notes subdirectory.
-
       -- Control how wiki links are completed with these (mutually exclusive) options:
       -- 1. Whether to add the note ID during completion.
       -- E.g. "[[Foo" completes to "[[foo|Foo]]" assuming "foo" is the ID of the note.
@@ -197,7 +196,7 @@ return {
       template = "main_template.md",
     },
     ui = {
-      enable = true, -- set to false to disable all additional syntax features
+      enable = false, -- set to false to disable all additional syntax features
       update_debounce = 200, -- update delay after a text change (in milliseconds)
       -- Define how various check-boxes are displayed
       checkboxes = {

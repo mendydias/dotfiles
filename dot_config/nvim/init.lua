@@ -2,4 +2,4 @@
 require("config.lazy")
 require("config.gui")
 require("oil").setup()
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme material-deep-ocean")

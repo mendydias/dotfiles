@@ -12,3 +12,5 @@ structs
 supremum
 infimum
 PPF
+NUMA
+SMP

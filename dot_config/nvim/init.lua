@@ -2,4 +2,4 @@
 require("config.lazy")
 require("config.gui")
 require("oil").setup()
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme kanagawa-wave")

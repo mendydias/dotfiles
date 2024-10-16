@@ -89,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 alias l="eza -lbgah --grid --icons"
 
 eval "$(starship init zsh)"
-starship preset jetpack -o ~/.config/starship.toml
+starship preset tokyonight -o ~/.config/starship.toml
 
 eval "$(zoxide init zsh)"
 

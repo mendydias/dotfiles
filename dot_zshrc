@@ -89,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 alias l="eza -lbgah --grid --icons"
 
 eval "$(starship init zsh)"
-starship preset tokyo-night -o ~/.config/starship.toml
+starship preset nerd-font-symbols -o ~/.config/starship.toml
 
 eval "$(zoxide init zsh)"
 
@@ -128,3 +128,4 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_TYPE=en_US.UTF-8
 export ELECTRON_OZONE_PLATFORM_HINT=wayland
+export TERM=xterm-256color

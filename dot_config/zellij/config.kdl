@@ -3,8 +3,6 @@ keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
-      unbind "Alt s" 
-      bind "Alt f" { SwitchToMode "search"; }
     }
     locked {
         bind "Alt g" { SwitchToMode "Normal"; }

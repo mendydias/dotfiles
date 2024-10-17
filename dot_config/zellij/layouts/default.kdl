@@ -6,5 +6,4 @@ layout {
     pane size=2 borderless=true {
       plugin location="status-bar"
     }
-  }
 }

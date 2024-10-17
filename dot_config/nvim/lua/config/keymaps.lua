@@ -5,3 +5,6 @@
 -- I like centering my scrolls
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<M-a>", "I#<Esc>$")
+vim.keymap.set("n", "<M-x>", "^x$")
+vim.keymap.set("n", "<leader>w", "^x$")

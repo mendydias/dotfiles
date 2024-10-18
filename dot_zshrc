@@ -130,3 +130,4 @@ export LANG=en_US.UTF-8
 export LC_TYPE=en_US.UTF-8
 export ELECTRON_OZONE_PLATFORM_HINT=wayland
 export TERM=xterm-256color
+eval "$(zellij setup --generate-auto-start zsh)"

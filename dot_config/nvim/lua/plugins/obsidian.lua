@@ -23,6 +23,8 @@ return {
     { "<leader>of", "<cmd>ObsidianQuickSwitch<cr>", desc = "Obsidian Find Files" },
     { "<leader>or", "<cmd>ObsidianRename<cr>", desc = "Obsidian Rename current note" },
     { "<leader>op", "<cmd>ObsidianPasteImg<cr>", desc = "Paste image into current note" },
+    { "<leader>oll", "<cmd>ObsidianLinks<cr>", desc = "List all links on page" },
+    { "<leader>olt", "<cmd>ObsidianTOC<cr>", desc = "Display table of contents of current buffer in telescope" },
     {
       "<leader>obl",
       "<cmd>ObsidianBacklinks<cr>",

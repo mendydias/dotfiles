@@ -19,3 +19,17 @@ end)
 vim.keymap.set("n", "<F8>", function()
   require("dap").run_to_cursor()
 end)
+
+vim.keymap.set(
+  "v",
+  "<leader>oln",
+  "<cmd>ObsidianLinkNew<cr>",
+  { desc = "Create a new link from the in-line visual selection" }
+)
+
+vim.keymap.set(
+  "v",
+  "<leader>ole",
+  "<cmd>ObsidianExtractNote<cr>",
+  { desc = "Extract visual selection to a new note and link to it in the current buffer at the cursor location" }
+)

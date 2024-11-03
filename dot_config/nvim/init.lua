@@ -23,4 +23,5 @@ require("oil").setup({
   },
   use_default_keymaps = false,
 })
-vim.cmd("colorscheme kanagawa")
+
+vim.cmd("colorscheme tokyonight")

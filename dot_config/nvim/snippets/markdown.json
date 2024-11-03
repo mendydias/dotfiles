@@ -1,0 +1,50 @@
+{
+  "Latex Fraction": {
+    "prefix": ["frac"],
+    "body": ["\\frac{$1}{$2}$0"]
+  },
+  "greater than or equal": {
+    "prefix": ["geq"],
+    "body": ["\\geq $0"]
+  },
+  "less than or equal": {
+    "prefix": ["leq"],
+    "body": ["\\leq $0"]
+  },
+  "power": {
+    "prefix": ["^"],
+    "body": ["$0^{$1}"]
+  },
+  "subfix": {
+    "prefix": ["_"],
+    "body": ["$0_{$1}"]
+  },
+  "verbatim": {
+    "prefix": ["txt"],
+    "body": ["\\text{$1}"]
+  },
+  "basic braces": {
+    "prefix": ["bb"],
+    "body": ["\\{ $0 \\\\}"]
+  },
+  "basic parentheses": {
+    "prefix": ["bp"],
+    "body": ["($1)"]
+  },
+  "basic square brackets": {
+    "prefix": ["bs"],
+    "body": ["[ $1 ]"]
+  },
+  "large braces": {
+    "prefix": ["lb"],
+    "body": ["\\bigl\\{ $1 \\\\bigr\\\\}"]
+  },
+  "large parentheses": {
+    "prefix": ["lp"],
+    "body": ["\\left( $1 \\\\right)"]
+  },
+  "large square brackets": {
+    "prefix": ["ls"],
+    "body": ["\\bigl[ $1 \\\\bigr]"]
+  }
+}

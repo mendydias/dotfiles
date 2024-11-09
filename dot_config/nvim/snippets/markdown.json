@@ -46,5 +46,13 @@
   "large square brackets": {
     "prefix": ["ls"],
     "body": ["\\bigl[ $1 \\\\bigr]"]
+  },
+  "log": {
+    "prefix": ["log"],
+    "body": ["\\log_{$1} $2"]
+  },
+  "sum": {
+    "prefix": ["sum"],
+    "body": ["\\sum_{$1}^{$2} $3"]
   }
 }

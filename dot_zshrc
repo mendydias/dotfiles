@@ -110,10 +110,10 @@ if [ -f $HOME/.sdkman/bin/sdkman-init.sh ]; then
 fi
 
 # Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+# source <(fzf --zsh)
 
 # Start ssh agent
-eval $(keychain --eval --quiet ~/.ssh/id_ed25519)
+# eval $(keychain --eval --quiet ~/.ssh/id_ed25519)
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/

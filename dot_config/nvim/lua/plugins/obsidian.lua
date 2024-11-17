@@ -42,7 +42,7 @@ return {
     workspaces = {
       {
         name = "notes",
-        path = "~/Documents/3.resources/1.notes.new",
+        path = "~/Documents/3.resources/1.notes",
         -- Optional, override certain settings.
         -- overrides = {
         --   notes_subdir = "notes",
@@ -354,7 +354,7 @@ return {
       ---@return string
       img_text_func = function(client, path)
         path = client:vault_relative_path(path) or path
-        return string.format("![%s](%s)", path.name, "../" . path)
+        return string.format("![%s](%s)", path.name, path)
       end,
     },
   },

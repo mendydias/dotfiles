@@ -1,15 +1,19 @@
 {
   "Latex Fraction": {
-    "prefix": ["frac"],
+    "prefix": ["fr"],
     "body": ["\\frac{$1}{$2}$0"]
   },
   "greater than or equal": {
-    "prefix": ["geq"],
+    "prefix": [">="],
     "body": ["\\geq $0"]
   },
   "less than or equal": {
-    "prefix": ["leq"],
+    "prefix": ["<="],
     "body": ["\\leq $0"]
+  },
+  "square": {
+    "prefix": ["sr"],
+    "body": ["^{2} "]
   },
   "power": {
     "prefix": ["^"],
@@ -20,7 +24,7 @@
     "body": ["$0_{$1}"]
   },
   "verbatim": {
-    "prefix": ["txt"],
+    "prefix": ["txt", "text"],
     "body": ["\\text{$1}"]
   },
   "basic braces": {
@@ -54,5 +58,9 @@
   "sum": {
     "prefix": ["sum"],
     "body": ["\\sum_{$1}^{$2} $3"]
+  },
+  "inline": {
+    "prefix": ["mk"],
+    "body": ["$$"]
   }
 }

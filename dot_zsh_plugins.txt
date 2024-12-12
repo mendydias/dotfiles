@@ -1,0 +1,22 @@
+rupa/z              # some bash plugins work too
+
+# you can even use Oh My Zsh plugins
+getantidote/use-omz
+ohmyzsh/ohmyzsh path:lib
+ohmyzsh/ohmyzsh path:plugins/extract
+
+# add fish-like features
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+
+akash329d/zsh-alias-finder
+Skylor-Tang/auto-venv
+nocttuam/autodotenv
+kalsowerus/zsh-bitwarden
+ael-code/zsh-colored-man-pages
+voronkovich/gitignore.plugin.zsh
+reegnz/jq-zsh-plugin
+laurenkt/zsh-vimto
+MenkeTechnologies/zsh-cargo-completion
+mass8326/zsh-chezmoi

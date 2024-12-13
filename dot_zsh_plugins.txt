@@ -20,3 +20,5 @@ reegnz/jq-zsh-plugin
 laurenkt/zsh-vimto
 MenkeTechnologies/zsh-cargo-completion
 mass8326/zsh-chezmoi
+skywind3000/z.lua
+mrjohannchang/fz.sh

@@ -19,6 +19,7 @@ bluez-utils
 brightnessctl
 btop
 btrfs-progs
+calibre
 cantarell-fonts
 chaotic-keyring
 chaotic-mirrorlist
@@ -260,6 +261,7 @@ yacreader
 yay
 yt-dlp
 zathura
+zathura-pdf-mupdf
 zen-browser-bin
 zoom
 zoxide

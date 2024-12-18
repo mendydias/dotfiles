@@ -33,6 +33,7 @@ dmidecode
 dmraid
 dnsmasq
 docker-desktop
+doctl
 dolphin
 dosfstools
 downgrade
@@ -82,6 +83,7 @@ hyde-cli-git
 hyprland
 hyprpicker
 inetutils
+intel-ucode
 inxi
 iptables-nft
 iwd
@@ -99,6 +101,7 @@ less
 libdvdcss
 libgsf
 libinput-gestures
+libnotify
 libopenraw
 libwnck3
 linux
@@ -155,6 +158,7 @@ plocate
 pokemon-colorscripts-git
 polkit-gnome
 poppler-glib
+postman-bin
 power-profiles-daemon
 pv
 python
@@ -164,6 +168,7 @@ python-packaging
 python-pyamdgpuinfo
 python-pyqt5
 python-pywalfox
+qemu-full
 qt5-graphicaleffects
 qt5-imageformats
 qt5-quickcontrols
@@ -232,6 +237,9 @@ usbutils
 v4l2loopback-dkms
 vi
 vim
+virt-manager
+virtualbox
+virtualbox-guest-iso
 vulkan-radeon
 vulkan-tools
 waybar
@@ -242,6 +250,7 @@ wine
 wireplumber
 wlogout
 wpa_supplicant
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-utils

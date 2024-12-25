@@ -33,7 +33,6 @@ dmidecode
 dmraid
 dnsmasq
 docker-desktop
-doctl
 dolphin
 dosfstools
 downgrade
@@ -61,6 +60,7 @@ ffmpegthumbnailer
 ffmpegthumbs
 firefox
 firewalld
+galaxybudsclient-bin
 gallery-dl
 gamemode
 gamescope
@@ -81,9 +81,10 @@ hwdetect
 hwinfo
 hyde-cli-git
 hyprland
+hyprland-qtutils
 hyprpicker
+imv
 inetutils
-intel-ucode
 inxi
 iptables-nft
 iwd
@@ -101,7 +102,6 @@ less
 libdvdcss
 libgsf
 libinput-gestures
-libnotify
 libopenraw
 libwnck3
 linux
@@ -124,6 +124,7 @@ modemmanager
 mtools
 nano
 nano-syntax-highlighting
+neovide
 neovim
 netctl
 network-manager-applet
@@ -168,7 +169,6 @@ python-packaging
 python-pyamdgpuinfo
 python-pyqt5
 python-pywalfox
-qemu-full
 qt5-graphicaleffects
 qt5-imageformats
 qt5-quickcontrols
@@ -192,6 +192,7 @@ sg3_utils
 slurp
 smartmontools
 sof-firmware
+starship
 steam
 sudo
 swappy
@@ -235,22 +236,20 @@ upower
 usb_modeswitch
 usbutils
 v4l2loopback-dkms
+vesktop
 vi
 vim
-virt-manager
-virtualbox
-virtualbox-guest-iso
 vulkan-radeon
 vulkan-tools
 waybar
 welcome
 wget
+whatsie-git
 which
 wine
 wireplumber
 wlogout
 wpa_supplicant
-xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdg-utils
@@ -271,7 +270,6 @@ yay
 yt-dlp
 zathura
 zathura-pdf-mupdf
-zen-browser-bin
 zoom
 zoxide
 zsh

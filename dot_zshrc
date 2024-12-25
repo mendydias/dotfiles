@@ -43,4 +43,4 @@ source /usr/share/zsh-antidote/antidote.zsh
 antidote load $HOME/.zsh_plugins.txt
 
 eval "$(starship init zsh)"
-starship preset jetpack -o ~/.config/starship.toml
+starship preset nerd-font-symbols -o ~/.config/starship.toml

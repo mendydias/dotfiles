@@ -42,4 +42,5 @@ export PAGER=bat
 source /usr/share/zsh-antidote/antidote.zsh
 antidote load $HOME/.zsh_plugins.txt
 
-eval "$(oh-my-posh init zsh --config https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/1_shell.omp.json)"
+eval "$(starship init zsh)"
+starship preset jetpack -o ~/.config/starship.toml

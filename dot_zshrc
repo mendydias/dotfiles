@@ -18,7 +18,8 @@ alias lX='la --sort=extension'          # Long, sort extension
 eval "$(zoxide init zsh)"
 
 alias vim="nvim "
-alias v="neovide "
+alias v="neovide . & disown"
+alias nv="neovide . & disown"
 alias zat="zathura "
 
 if [ -f $HOME/.sdkman/bin/sdkman-init.sh ]; then

@@ -7,3 +7,5 @@ vim.o.relativenumber = false
 vim.g.maplocalleader = "\t"
 vim.o.background = "light"
 vim.go.background = "light"
+
+vim.g.snacks_animate = false

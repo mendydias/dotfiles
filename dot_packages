@@ -65,6 +65,7 @@ gallery-dl
 gamemode
 gamescope
 gestures
+ghostty-git
 git
 glances
 gnome-calculator
@@ -224,9 +225,11 @@ texlive-pstricks
 texlive-publishers
 texlive-xetex
 tldr
+tmux
 trash-cli-git
 ttf-bitstream-vera
 ttf-dejavu
+ttf-fantasque-nerd
 ttf-liberation
 ttf-opensans
 udiskie

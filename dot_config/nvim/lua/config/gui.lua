@@ -6,7 +6,7 @@
 if vim.g.neovide then
   -- Set the font to something I like
   -- Sets the font size with the h option
-  vim.o.guifont = "JetBrainsMono Nerd Font:h12"
+  vim.o.guifont = "FantasqueSansM Nerd Font:h12"
   -- Sets the linespacing
   vim.opt.linespace = 1
   -- Set the transparency of the window

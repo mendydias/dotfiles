@@ -39,6 +39,7 @@ export ELECTRON_OZONE_PLATFORM_HINT=wayland
 export TERM=xterm-256color
 export OBSIDIAN_VAULT="${HOME}/Documents/3.resources/1.notes"
 export PAGER=bat
+export XDG_CURRENT_DESKTOP=Hyprland
 
 source /usr/share/zsh-antidote/antidote.zsh
 antidote load $HOME/.zsh_plugins.txt

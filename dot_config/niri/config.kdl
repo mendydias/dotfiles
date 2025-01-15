@@ -30,7 +30,7 @@ input {
         tap
         dwt
         click-method "clickfinger"
-        // dwtp
+        dwtp
         // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
@@ -220,6 +220,9 @@ spawn-at-startup "systemctl" "start" "polkitd"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "clipse" "-listen"
 spawn-at-startup "swayidle" "-w" "timeout" "300" "'swaylock -f -c 000000'" "timeout" "600" "'niri msg action power-off-monitors'" "before-sleep" "'swaylock -f'"
+spawn-at-startup "kitty"
+spawn-at-startup "firefox"
+spawn-at-startup "obsidian"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -273,6 +276,7 @@ window-rule {
 
 window-rule {
   match app-id=r#"^obsidian$"#
+  match app-id=r#"^neovide$"#
   open-on-workspace "editor"
 }
 
@@ -312,9 +316,10 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return { spawn "kitty"; }
-    Mod+D { spawn "rofi" "-show" "drun"; }
+    Mod+D { spawn "rofi" "-show" "run"; }
     Super+Escape { spawn "swaylock" "--screenshot" "--clock" "--indicator" "--effect-blur" "7x5"; }
     Mod+B {spawn "firefox";}
+    Mod+E {spawn "neovide";}
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.

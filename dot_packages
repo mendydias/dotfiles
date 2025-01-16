@@ -61,10 +61,12 @@ ffmpegthumbs
 firefox
 firewalld
 flatpak
+foot
 gallery-dl
 gamemode
 gamescope
 gestures
+ghostty
 git
 glances
 gnome-calculator
@@ -81,11 +83,7 @@ haveged
 hdparm
 hwdetect
 hwinfo
-hypridle
-hyprland
-hyprlock
 hyprpicker
-hyprpolkitagent
 hyprshot
 inetutils
 intel-ucode
@@ -142,6 +140,7 @@ networkmanager-openconnect
 networkmanager-openvpn
 nfs-utils
 nilfs-utils
+niri
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -168,6 +167,7 @@ playerctl
 plocate
 pokemon-colorscripts-git
 polkit-gnome
+polkit-kde-agent
 poppler-glib
 postman-bin
 power-profiles-daemon
@@ -206,6 +206,7 @@ starship
 steam
 sudo
 swappy
+swayidle
 swaylock-effects-git
 swww
 sysfsutils

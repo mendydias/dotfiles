@@ -1,8 +1,0 @@
-live_config_reload = true
-
-[window]
-decorations = "None"
-padding = {x = 14, y = 14}
-
-[font]
-normal = {family = "JetBrainsMono Nerd Font", style = "Regular"}

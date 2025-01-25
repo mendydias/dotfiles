@@ -1,8 +1,0 @@
-theme = "jubi"
-font-family = "FantasqueSansM Nerd Font"
-font-size = 12
-window-padding-x = 25
-window-padding-y = 25
-window-decoration = false
-
-keybind = global:super+ctrl+grave_accent=toggle_quick_terminal

@@ -18,9 +18,6 @@ alias lX='la --sort=extension'          # Long, sort extension
 eval "$(zoxide init zsh)"
 
 alias vim="nvim "
-alias v="neovide . & disown"
-alias nv="neovide . & disown"
-alias zat="zathura "
 
 if [ -f $HOME/.sdkman/bin/sdkman-init.sh ]; then
 	source $HOME/.sdkman/bin/sdkman-init.sh
@@ -28,18 +25,13 @@ fi
 
 source <(fzf --zsh)
 
-eval $(keychain --eval --quiet ~/.ssh/id_ed25519)
-
 # Fix ligatures
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_TYPE=en_US.UTF-8
-export ELECTRON_OZONE_PLATFORM_HINT=wayland
 export TERM=xterm-256color
-export OBSIDIAN_VAULT="${HOME}/Documents/3.resources/1.notes"
 export PAGER=bat
-export XDG_CURRENT_DESKTOP=Hyprland
 
 source /usr/share/zsh-antidote/antidote.zsh
 antidote load $HOME/.zsh_plugins.txt

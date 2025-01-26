@@ -23,8 +23,6 @@ if [ -f $HOME/.sdkman/bin/sdkman-init.sh ]; then
 	source $HOME/.sdkman/bin/sdkman-init.sh
 fi
 
-source <(fzf --zsh)
-
 # Fix ligatures
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -33,7 +31,7 @@ export LC_TYPE=en_US.UTF-8
 export TERM=xterm-256color
 export PAGER=bat
 
-source /usr/share/zsh-antidote/antidote.zsh
+source $HOME/.antidote/antidote.zsh
 antidote load $HOME/.zsh_plugins.txt
 
 eval "$(starship init zsh)"

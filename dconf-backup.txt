@@ -1,0 +1,178 @@
+[org/gnome/control-center]
+last-panel='keyboard'
+window-state=(980, 640, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Pardus']
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/drool-l.svg'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/drool-d.svg'
+primary-color='#86b6ef'
+secondary-color='#000000'
+
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'us')]
+xkb-options=['terminate:ctrl_alt_bksp', 'caps:escape_shifted_capslock']
+
+[org/gnome/desktop/interface]
+color-scheme='prefer-dark'
+font-antialiasing='grayscale'
+font-hinting='slight'
+
+[org/gnome/desktop/notifications]
+application-children=['app-zen-browser-zen', 'com-rtosta-zapzap', 'com-todoist-todoist']
+
+[org/gnome/desktop/notifications/application/app-zen-browser-zen]
+application-id='app.zen_browser.zen.desktop'
+
+[org/gnome/desktop/notifications/application/com-rtosta-zapzap]
+application-id='com.rtosta.zapzap.desktop'
+
+[org/gnome/desktop/notifications/application/com-todoist-todoist]
+application-id='com.todoist.Todoist.desktop'
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+old-files-age=uint32 30
+recent-files-max-age=-1
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/drool-l.svg'
+primary-color='#86b6ef'
+secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 300
+
+[org/gnome/desktop/wm/keybindings]
+close=['<Super>q']
+move-to-workspace-1=['<Shift><Super>1']
+move-to-workspace-2=['<Shift><Super>2']
+move-to-workspace-3=['<Shift><Super>3']
+move-to-workspace-4=['<Shift><Super>4']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-last=@as []
+switch-to-workspace-left=['<Control><Super>Left']
+switch-to-workspace-right=['<Control><Super>Right']
+
+[org/gnome/evince/default]
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+fullscreen=false
+inverted-colors=false
+show-sidebar=false
+sidebar-page='thumbnails'
+sidebar-size=132
+sizing-mode='automatic'
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+
+[org/gnome/portal/filechooser/app.zen_browser.zen]
+last-folder-path='/home/mendydias/Documents/Projects/installments/data'
+
+[org/gnome/portal/filechooser/com.axosoft.GitKraken]
+last-folder-path='/home/mendydias/Documents/Projects'
+
+[org/gnome/portal/filechooser/com.rtosta.zapzap]
+last-folder-path='/home/mendydias/Downloads/docs'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+calculator=['<Super>End']
+control-center=['<Control><Alt>s']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+home=['<Super>e']
+screenreader=@as []
+www=['<Super>b']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>Return'
+command='kitty'
+name='kitty'
+
+[org/gnome/settings-daemon/plugins/power]
+power-button-action='interactive'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=1800
+sleep-inactive-battery-type='nothing'
+
+[org/gnome/shell]
+app-picker-layout=[{'org.gnome.Chess.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <5>}>, 'org.gnome.Photos.desktop': <{'position': <6>}>, 'org.gnome.Totem.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'org.gnome.gedit.desktop': <{'position': <9>}>, 'simple-scan.desktop': <{'position': <10>}>, 'org.gnome.Settings.desktop': <{'position': <11>}>, 'gnome-system-monitor.desktop': <{'position': <12>}>, 'dia.desktop': <{'position': <13>}>, 'org.gnome.Terminal.desktop': <{'position': <14>}>, 'Utilities': <{'position': <15>}>, 'emacs.desktop': <{'position': <16>}>, 'yelp.desktop': <{'position': <17>}>, 'org.gnome.Extensions.desktop': <{'position': <18>}>, 'org.gnome.Cheese.desktop': <{'position': <19>}>, 'org.gnome.eog.desktop': <{'position': <20>}>, 'gimp.desktop': <{'position': <21>}>, 'git-gui.desktop': <{'position': <22>}>, 'org.inkscape.Inkscape.desktop': <{'position': <23>}>}, {'libreoffice-startcenter.desktop': <{'position': <0>}>, 'libreoffice-base.desktop': <{'position': <1>}>, 'libreoffice-calc.desktop': <{'position': <2>}>, 'libreoffice-draw.desktop': <{'position': <3>}>, 'libreoffice-impress.desktop': <{'position': <4>}>, 'libreoffice-math.desktop': <{'position': <5>}>, 'org.gnome.LightsOff.desktop': <{'position': <6>}>, 'org.gnome.Logs.desktop': <{'position': <7>}>, 'org.gnome.Mahjongg.desktop': <{'position': <8>}>, 'org.gnome.Mines.desktop': <{'position': <9>}>, 'jconsole.desktop': <{'position': <10>}>, 'gpk-prefs.desktop': <{'position': <11>}>, 'org.gnome.PackageUpdater.desktop': <{'position': <12>}>, 'org.gnome.Polari.desktop': <{'position': <13>}>, 'system-config-printer.desktop': <{'position': <14>}>, 'org.gnome.Quadrapassel.desktop': <{'position': <15>}>, 'org.gnome.Reversi.desktop': <{'position': <16>}>, 'org.gnome.Software.desktop': <{'position': <17>}>, 'org.gnome.Sudoku.desktop': <{'position': <18>}>, 'org.gnome.SwellFoop.desktop': <{'position': <19>}>, 'vncviewer.desktop': <{'position': <20>}>, 'transmission-gtk.desktop': <{'position': <21>}>, 'org.opensuse.opensuse_welcome.desktop': <{'position': <22>}>, 'xscreensaver.desktop': <{'position': <23>}>}, {'xscreensaver-settings.desktop': <{'position': <0>}>, 'org.opensuse.YaST.desktop': <{'position': <1>}>, 'YaST': <{'position': <2>}>, 'com.bitwarden.desktop.desktop': <{'position': <3>}>, 'mupdf-gl.desktop': <{'position': <4>}>, 'org.pwmt.zathura.desktop': <{'position': <5>}>, 'md.obsidian.Obsidian.desktop': <{'position': <6>}>, 'com.rtosta.zapzap.desktop': <{'position': <7>}>, 'com.calibre_ebook.calibre.desktop': <{'position': <8>}>, 'com.calibre_ebook.calibre.ebook-edit.desktop': <{'position': <9>}>, 'com.calibre_ebook.calibre.ebook-viewer.desktop': <{'position': <10>}>, 'com.calibre_ebook.calibre.lrfviewer.desktop': <{'position': <11>}>, 'org.zotero.Zotero.desktop': <{'position': <12>}>, 'com.github.IsmaelMartinez.teams_for_linux.desktop': <{'position': <13>}>, 'us.zoom.Zoom.desktop': <{'position': <14>}>, 'com.getpostman.Postman.desktop': <{'position': <15>}>, 'firefox.desktop': <{'position': <16>}>, 'org.gnome.Evolution.desktop': <{'position': <17>}>, 'org.gnome.Music.desktop': <{'position': <18>}>, 'libreoffice-writer.desktop': <{'position': <19>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <20>}>, 'io.missioncenter.MissionCenter.desktop': <{'position': <21>}>, 'kitty.desktop': <{'position': <22>}>}]
+favorite-apps=['app.zen_browser.zen.desktop', 'kitty.desktop', 'com.todoist.Todoist.desktop', 'org.gnome.Nautilus.desktop', 'com.rtosta.zapzap.desktop']
+last-selected-power-profile='performance'
+welcome-dialog-last-shown-version='45.3'
+
+[org/gnome/shell/keybindings]
+screenshot=['<Super>s']
+screenshot-window=['<Alt><Super>s']
+show-screenshot-ui=['<Shift><Super>s']
+switch-to-application-1=@as []
+switch-to-application-2=@as []
+switch-to-application-3=@as []
+switch-to-application-4=@as []
+toggle-quick-settings=@as []
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gnome/software]
+check-timestamp=int64 1738126293
+first-run=false
+flatpak-purge-timestamp=int64 1738133429
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+view-type='list'
+window-size=(859, 372)

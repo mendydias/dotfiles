@@ -1,11 +1,10 @@
 export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.local/scripts:/usr/local/bin:$HOME/.config/emacs/bin:$GOPATH:$PATH
 
-
 export EDITOR=nvim
 
 # Group directories first, show icons, and enable file size color scale
-alias l='eza --group-directories-first --icons --color-scale'
-alias lt='eza --tree --level=2 --icons' # Show in tree view
+alias ez='eza --group-directories-first --icons --color-scale --grid'
+alias ezt='eza --tree --level=2 --icons' # Show in tree view
 
 eval "$(zoxide init zsh)"
 

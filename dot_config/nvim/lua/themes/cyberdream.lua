@@ -8,7 +8,7 @@ return {
       transparent = false,
       italic_comments = true,
       hide_fillchars = true,
-      borderless_telescope = true,
+      borderless_pickers = true,
     })
   end,
 }

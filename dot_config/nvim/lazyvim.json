@@ -7,6 +7,7 @@
     "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.dap.core",
     "lazyvim.plugins.extras.editor.dial",
+    "lazyvim.plugins.extras.editor.fzf",
     "lazyvim.plugins.extras.editor.harpoon2",
     "lazyvim.plugins.extras.editor.illuminate",
     "lazyvim.plugins.extras.editor.inc-rename",
@@ -16,7 +17,7 @@
     "lazyvim.plugins.extras.editor.outline",
     "lazyvim.plugins.extras.editor.overseer",
     "lazyvim.plugins.extras.editor.refactoring",
-    "lazyvim.plugins.extras.editor.snacks_picker",
+    "lazyvim.plugins.extras.editor.snacks_explorer",
     "lazyvim.plugins.extras.formatting.black",
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.clangd",
@@ -59,5 +60,5 @@
   "news": {
     "NEWS.md": "10960"
   },
-  "version": 7
+  "version": 8
 }

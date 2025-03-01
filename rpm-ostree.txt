@@ -1,9 +1,0 @@
-State: idle
-BootedDeployment:
-● fedora:fedora/41/x86_64/sericea
-                  Version: 41.20250203.0 (2025-02-03T00:42:18Z)
-               BaseCommit: cc5b1db78de8d4abb05a29ab08062be03946177292673341c33019e68667a975
-             GPGSignature: Valid signature by 466CF2D8B60BC3057AA9453ED0622462E99D6AD1
-          LayeredPackages: bat eza fzf ghostty libvirt-daemon-config-network
-                           libvirt-daemon-kvm lua qemu-kvm ripgrep virt-install
-                           virt-manager virt-viewer zathura zathura-plugins-all zoxide zsh

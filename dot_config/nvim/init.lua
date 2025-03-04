@@ -2,4 +2,4 @@
 require("config.lazy")
 require("config.gui")
 
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme kanagawa-dragon")

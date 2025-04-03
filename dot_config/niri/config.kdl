@@ -340,6 +340,9 @@ binds {
     Mod+T { spawn "kitty"; }
     Mod+D { spawn "fuzzel"; }
     Mod+Alt+L { spawn "swaylock"; }
+    Mod+B { spawn "zen-browser"; }
+    Mod+P { spawn "firefox"; }
+    Mod+O { spawn "obsidian"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
@@ -351,6 +354,9 @@ binds {
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+    
+    Mod+Ctrl+Minus { spawn "pavucontrol"; }
+    Mod+Ctrl+Equal { spawn "blueman-manager"; }
 
     Mod+Q { close-window; }
 

@@ -44,3 +44,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Work around to use podman with test containers
 export DOCKER_HOST=unix://${XDG_RUNTIME_DIR}/podman/podman.sock
+
+# hydectl source
+source ~/.config/hypr/zsh-autocomplete.sh

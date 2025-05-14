@@ -41,6 +41,7 @@ dosfstools
 dotnet-sdk
 downgrade
 dracut
+duckdb-bin
 duf
 dunst
 dysk
@@ -69,8 +70,8 @@ flatpak
 foot
 ghc
 git
-gitui
 glances
+glow
 go
 google-chrome
 grimblast-git
@@ -91,6 +92,7 @@ inetutils
 inxi
 iptables-nft
 iwd
+jetbrains-toolbox
 jfsutils
 jq
 kde-cli-tools
@@ -99,6 +101,7 @@ kitty
 komikku
 kvantum
 kvantum-qt5
+lazygit
 less
 libdvdcss
 libgsf
@@ -114,6 +117,7 @@ lvm2
 man-db
 man-pages
 mdadm
+mediainfo
 meld
 mesa-utils
 modemmanager
@@ -154,6 +158,7 @@ otf-hermit-nerd
 otf-monaspace-nerd
 otf-opendyslexic-nerd
 otf-overpass-nerd
+ouch
 pacman-contrib
 pamixer
 paru
@@ -331,6 +336,7 @@ yazi
 zapzap
 zip
 zoom
+zotero-bin
 zoxide
 zsh
 zsh-theme-powerlevel10k-git

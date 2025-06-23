@@ -219,7 +219,6 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plasma-browser-integration
-plasma-desktop
 plasma-firewall
 plasma-integration
 plasma-nm
@@ -233,6 +232,7 @@ plymouth
 plymouth-kcm
 podman
 polkit-gnome
+polkit-kde-agent
 poppler-glib
 power-profiles-daemon
 powerdevil
@@ -406,3 +406,4 @@ zip
 zoom
 zotero-bin
 zoxide
+zsh-antidote

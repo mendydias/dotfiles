@@ -238,7 +238,6 @@ texlive-publishers
 texlive-xetex
 thefuck
 thunderbird
-tldr
 tmux
 ttf-0xproto-nerd
 ttf-3270-nerd
@@ -339,4 +338,3 @@ zoom
 zotero-bin
 zoxide
 zsh
-zsh-theme-powerlevel10k-git

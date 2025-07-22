@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.local/scripts:/usr/local/bin:$HOME/.config/emacs/bin:$GOPATH:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.local/scripts:/usr/local/bin:$HOME/.config/emacs/bin:/snap/bin:$HOME/.cargo/bin:$GOPATH:$PATH
 
 export EDITOR=nvim
 
